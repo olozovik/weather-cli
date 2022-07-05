@@ -2,15 +2,24 @@
   "name": "weather-cli",
   "version": "0.0.1",
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "app.js",
+  "bin": {
+    "weather": "app.js"
   },
+  "type": "module",
+  "scripts": {},
   "keywords": [
     "cli",
     "weather"
   ],
   "author": "Oleh L",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "dedent-js": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0"
+  }
 }
