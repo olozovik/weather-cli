@@ -10,6 +10,7 @@ const saveToken = async token => {
     printError('Token is not passed');
     return;
   }
+
   try {
     await saveKeyValue(DATA_DICT.token, token);
     printSuccess('Token is saved');
@@ -28,6 +29,7 @@ const initCLI = () => {
   if (args.t) {
     return saveToken(args.t);
   }
+
   getWeather('Zhytomyr');
 };
 
